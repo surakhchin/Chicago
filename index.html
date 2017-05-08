@@ -1,0 +1,299 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @surakhchin
+ Sign out
+ Unwatch 1
+  Star 0
+  Fork 0 surakhchin/surakhchin.github.io
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy pathsurakhchin.github.io/index.html
+48822b2  on Mar 31
+@surakhchin surakhchin back home
+1 contributor
+RawBlameHistory
+286 lines (274 sloc)  12.1 KB
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML5 Assignment</title>
+<!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <!--Marquee script to change background-->
+<script>
+//   function marquee(){
+////        document.getElementById('marquee').innerHTML="<a href='#'><img src='http://i.imgur.com/gvjKcb.jpg' width='100%'></a>";
+//
+//    }
+$( document ).ready(function() {
+    $('#menus ul li a').click(function() {
+        var x = $(this).attr("data-url");
+        $('.background').css({'background-image':'url('+x+')'});
+    });
+});
+</script>
+
+    <style type="text/css">
+        .navbar{
+            /*border-style: solid;*/
+            /*border-width: 2px;*/
+            background-color: black;
+            opacity: .8;
+            text-align: center;
+        }
+        .navbar .navbar-nav {
+          display: inline-block;
+          float: none;
+          vertical-align: top;
+        }
+        .navbar-nav li a:hover{
+          text-decoration: none;
+          border-bottom: 2px solid red;
+        }
+        .navbar-nav li.active a:hover {
+            border-bottom: 0;
+        }
+        .navbar-nav li a {
+            display: block;
+        }
+        body{
+            padding-top: 60px;
+    }
+        header > h1{
+            /*border-width: 1px;*/
+            /*border-style: solid;*/
+            /*border-color: pink;*/
+        }
+        h1{
+            /*border-width: 1px;*/
+            /*border-style: solid;*/
+            /*border-color: green;*/
+        }
+        h2{
+            /*border-width: 1px;*/
+            /*border-style: solid;*/
+            /*border-color: blue;*/
+        }
+        h3{
+            /*border-width: 1px;*/
+            /*border-style: solid;*/
+            /*border-color: yellow;*/
+            text-align: center;
+            padding-right: 50px;
+        }
+        .menu{
+            width: 340px;
+            float: right;
+            padding: 20px;
+            /*border-width: 1px;*/
+            /*border-style: solid;*/
+            /*border-color: red;*/
+        }
+        article{
+            /*border-width: 1px;*/
+            /*border-style: solid;*/
+            /*border-color: cyan;*/
+        }
+        #scrolldown, #topside{
+            position: relative;
+            bottom: -350px
+        }
+        img {
+            width: 100%;
+        }
+        .background{
+            background-image: url("http://www.yourmemorylane.com/cmspix/option-samples/thumb2/010-CHICAGO(1)_001.jpg");
+            -webkit-background-size: 100%;
+        }
+        #marquee{
+            padding-bottom: 400px;
+        }
+        #titles{
+            /*padding-right: 550px;*/
+        }
+        #menus{
+            /*float: right;*/
+            text-align: right;
+        }
+        #mobile{
+            text-align: right;
+        }
+        li {
+            list-style-type: none;
+        }
+        main{
+            background-color: #999;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        @media(max-width: 600px) {
+            #marquee {display: none;}
+        }
+        @media(max-width: 600px) {
+            #desktop {display: none}
+        }
+        @media(min-width: 600px) {
+            #mobile {display: none}
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top" id="desktop">
+              <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                  <li><a href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+                  <li><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
+                  <li class="active"><a style="color: red" href="http://surakhchin.github.io">Chicago</a></li>
+                  <li><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+                  <li><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top" id="mobile">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                    <!--<h5 style="color:red; text-align: center">Chicago</h5>-->
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <a style="color: #ffffff">Menu</a>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a  class="navbar-brand" style="color: red; padding-left: 40%">Chicago</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="http://surakhchin.github.io">Home</a></li>
+                      <li><a href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+                      <li><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
+                      <li><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+                      <li><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="container"></div>
+        </div>
+        <div class="background" class="container" id="marquee">
+            <section>
+                <div class="container-fluid">
+                    <div class="row" id="topside">
+                      <div class="col-sm-6" id="titles">
+                        <header style="font-size: 200%">
+                            <h1>City of Chicago</h1>
+                            <h2>The Windy City</h2>
+                        </header>
+                      </div>
+                      <div class="col-sm-6" id="menus">
+                            <ul class="menu" style="font-size: 200%; background-color: rgba(80, 80, 80, 0.5)"; >
+                              <li><a data-url="http://i.imgur.com/FwK9KtO.png">Home</a></li>
+                              <li><a data-url="http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Chicago-Wallpaper-5.jpg">Business</a></li>
+                              <li><a data-url="http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Chicago-Wallpaper-2.jpg">Culture & Recreation</a></li>
+                              <li><a data-url="http://www.hdwallpaper.nu/wp-content/uploads/2015/02/Chicago-Hd-Wallpaper.jpg">Environment</a></li>
+                              <li><a data-url="http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Chicago-Wallpaper-3.jpg">Housing & Development</a></li>
+                              <li><a data-url="http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Chicago-Wallpaper-2.jpeg">Social Services</a></li>
+                              <li><a data-url="http://www.themebin.com/wp-content/uploads/hd-wallpapers/1920x1080/Old_Chicago_by_Rushmile.jpg">Civic Services</a></li>
+                              <li><a data-url="http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Chicago-Wallpaper-8.jpg">Education</a></li>
+                              <li><a data-url="http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Chicago-Wallpaper-4.jpg">Health</a></li>
+                            </ul>
+                      </div>
+                    </div>
+                </div>
+                <h3 id="scrolldown">Scroll Down</h3>
+            </section>
+        </div>
+        <!--<div class="container-fluid">-->
+        <section>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <article>
+                                <time datetime="2008-02-14 20:00">1:00</time>
+                                <a href="http://imgur.com/gallery/0JMAdHM"><img src="http://i.imgur.com/0JMAdHMb.jpg"alt="first"></a>
+                                <h1>Article 1</h1>
+                                <p>Paragraph 1</p>
+                            </article>
+                        </div>
+                        <div class="col-sm-4">
+                            <article>
+                                <time datetime="2008-02-14 20:00">2:00</time>
+                                <a href="https://en.wikipedia.org/wiki/Chicago-style_pizza"><img src="http://i.imgur.com/PMRqy0Tb.jpg"alt="second"></a>
+                                <h1>Article 2</h1>
+                                <p>Paragraph 2</p>
+                            </article>
+                        </div>
+                        <div class="col-sm-4">
+                            <article>
+                                <time datetime="2008-02-14 20:00">3:00</time>
+                                <a href="https://en.wikipedia.org/wiki/Millennium_Park"><img src="http://i.imgur.com/KCEXbDHb.jpg"alt="third"></a>
+                                <h1>Article 3</h1>
+                                <p>Paragraph 3</p>
+                            </article>
+                        </div>
+                    </div>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <article>
+                                <time datetime="2008-02-14 20:00">4:00</time>
+                               <a href="http://www.chicagobears.com/"> <img src="http://i.imgur.com/CzkZUiQb.jpg"alt="fourth"></a>
+                                <h1>Article 4</h1>
+                                <p>Paragraph 4</p>
+                            </article>
+                        </div>
+                        <div class="col-sm-4">
+                            <article>
+                                <time datetime="2008-02-14 20:00">5:00</time>
+                                <a href="https://en.wikipedia.org/wiki/Lake_Shore_Drive"><img src="http://i.imgur.com/gvjKcb.jpg"alt="fifth"></a>
+                                <h1>Article 5</h1>
+                                <p>Paragraph 5</p>
+                            </article>
+                        </div>
+                        <div class="col-sm-4">
+                            <article>
+                                <time datetime="2008-02-14 20:00">6:00</time>
+                                <a href="https://en.wikipedia.org/wiki/Chicago_Loop"><img src="http://i.imgur.com/5qfFVb.jpg"alt="sixth"></a>
+                                <h1>Article 6</h1>
+                                <p>Paragraph 6</p>
+                            </article>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!--</div>-->
+    </main>
+
+    <!--<script>-->
+    <!--function ReplaceContentInContainer(background,content) {-->
+        <!--var container = document.getElementById(background);-->
+        <!--container.innerHTML = "<img src='Images/c.jpg' class='thumb' />";-->
+    <!--}-->
+<!--</script>-->
+
+<!--<div id="column1">-->
+    <!--<a href="javascript:ReplaceContentInContainer('column2', 'hi')">-->
+    <!--<img src="http://i.imgur.com/0JMAdHMb.jpg" class="thumb" />-->
+<!--</a>-->
+<!--</div>-->
+<!--<div id="column2">-->
+<!--<img src="Images/b.jpg" class="thumb" />-->
+</div>
+</body>
+</html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
